@@ -1,0 +1,953 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+  --font-family: "Golos Text", sans-serif;
+  --second-family: "Merriweather", sans-serif;
+  --third-family: "Montserrat", sans-serif;
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Merriweather", serif;
+}
+
+.container {
+  width: 1220px;
+  margin: auto;
+}
+
+.mobile {
+  display: none;
+}
+
+.title-number-mobile {
+  display: none;
+}
+
+.card-block-img-mobile {
+  display: none;
+}
+
+.car-mobile {
+  display: none;
+}
+
+
+/* Блок home с header */
+
+.header {
+  padding-top: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.header-name {
+  margin: 0 0 0 10px;
+  font-family: var(--font-family), serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 108%;
+  text-transform: uppercase;
+  color: #595653;
+}
+
+.main-block {
+  background-image: url('../img/image.png');
+  height: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.home {
+  width: 542px;
+  height: 444px;
+}
+
+.home-text-one {
+  margin: 50px 0 7px 0;
+  font-family: var(--second-family), serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #313131;
+  letter-spacing: 2px;
+}
+
+.home-text-two {
+  margin: 0;
+  text-align: center;
+  font-family: var(--second-family), serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #313131;
+  letter-spacing: 2px;
+}
+
+.home-text-three {
+  font-family: var(--font-family), serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #313131;
+}
+
+.home-button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+}
+
+.home-button-one {
+  width: 263px;
+  border-radius: 66px;
+  padding: 15px 20px 15px 20px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  background-color: #1F1F1F;
+
+  font-family: "Golos Text", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20.8px;
+  text-align: center;
+  color: #FFFFFF;
+  transition: 0.2s;
+}
+
+.home-button-one span {
+  width: 165px;
+}
+
+.home-button-one:hover {
+  background-color: #FBCE51;
+  color: #1F1F1F;
+  transition: 0.2s;
+}
+
+.home-button-two {
+  width: 263px;
+  border-radius: 66px;
+  padding: 15px 20px 15px 20px;
+  border: 2px solid #1F1F1F;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  background: none;
+
+  font-family: "Golos Text", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20.8px;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.home-button-two span {
+  width: 165px;
+}
+
+.home-button-two:hover {
+  background-color: #1F1F1F;
+  color: #FFFFFF;
+  transition: 0.2s;
+}
+
+/* line */
+
+.line {
+  background-color: #F54932;
+  overflow: hidden;
+  display: flex;
+}
+
+.line-list {
+
+  margin: 0;
+  padding: 18px 12px 18px 12px;
+  display: flex;
+  font-weight: 400;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  left: 100%;
+}
+
+.line-list li {
+  margin-left: 30px;
+  white-space: nowrap;
+}
+
+
+
+/* Второй блок Support */
+
+.support {
+  margin-top: 100px;
+}
+
+.support-block {
+  display: flex;
+}
+
+.support-block h2 {
+  font-weight: 400;
+  font-size: 36px;
+  text-transform: uppercase;
+  line-height: 48.6px;
+}
+
+.support-block h2 span {
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+  line-height: 48.6px;
+  color: #F54932;
+}
+
+.support-table-line-del {
+  text-decoration: line-through #ff0000;
+  margin-right: 5px;
+}
+
+.support-block-table{
+  margin-left: 25px;
+}
+
+.support-block-table table {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-spacing: 0;
+}
+
+.support-block-table td {
+  border: 2px solid #D0D0D0;
+  padding: 15px 0px 15px 0px;
+  font-weight: 600;
+  font-family: "Golos Text", sans-serif;
+  font-size: 20px;
+}
+
+.support-block-table td:first-child {
+  color: #8c9194;
+  font-weight: 400;
+
+  border-top-width: 0;
+  border-left-width: 0;
+}
+
+.support-block-table td:last-child {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+
+  padding: 0px 0px 0px 15px;
+}
+
+.support-block-table tr:first-child td {
+  padding: 0px 0px 15px 0px;
+}
+
+.support-block-table tr:first-child td:last-child {
+  padding: 0px 0px 15px 15px;
+}
+
+.support-block-table tr:last-child td {
+  border-bottom: 0;
+  padding: 15px 0px 0px 0px;
+}
+
+.support-block-table tr:last-child td:last-child  {
+  border-bottom: 0;
+  padding: 15px 0px 0px 15px;
+}
+
+.support-table-info-text {
+  color: #3057A2;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+/* Блок с карточками */
+
+.card {
+  margin-top: 125px;
+}
+
+.card h2 {
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 64.8px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.card-title-dop {
+  display: flex;
+  align-items: center;
+}
+
+.card-title-dop h2 {
+  display: inline;
+  margin-right: 25px;
+}
+
+.card-title-dop p {
+  width: 25%;
+  margin: 0;
+
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #3057A2;
+}
+
+.card-block {
+  display: grid;
+  gap: 20px;
+
+  grid-template-columns: repeat(3, 393px);
+  grid-template-rows: 112px 112px 130px;
+
+  margin-top: 65px;
+}
+
+.card-info {
+  width: 385px;
+  background-image: url('../img/back.png');
+}
+
+.card-info:nth-child(3) {
+  grid-row: span 2;
+}
+
+.card-info:last-child {
+  width: 100%;
+  grid-column: span 2;
+}
+
+.card-info-block {
+  display: flex;
+  padding: 18px;
+
+  color: #313131;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.card-block-number {
+  background-color: white;
+
+  color: #313131;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+
+  padding: 12px;
+  display: flex;
+  margin-right: 15px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  max-width: 10px;
+  max-height: 10px;
+}
+
+.card-block-img {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.card-block-info-img {
+  position: absolute;
+  margin-bottom: 50px;
+}
+
+/* Участники */
+
+.partner {
+  margin-top: 100px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title h2 {
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 64.8px;
+  text-transform: uppercase;
+}
+
+.title-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-number-mobile {
+  display: none;
+}
+
+.title-number-button {
+  border-radius: 100%;
+  padding: 12px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  max-width: 44px;
+  max-height: 44px;
+  border: none;
+  cursor: pointer;
+  background-color: #313131;
+  transition: 0.2s;
+}
+
+
+.title-number-button:first-child {
+  padding-left: 10px;
+}
+
+.title-number-button:last-child {
+  padding-right: 10px;
+}
+
+.title-number-button:hover {
+  background-color: #FBCE51;
+  transition: 0.2s;
+}
+
+.button-disabled {
+  background-color: #31313133;
+}
+
+.button-disabled:hover {
+  background-color: #31313133;
+}
+
+.title-number p {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-right: 15px;
+  margin-left: 15px;
+  color: #313131;
+  white-space: nowrap;
+}
+
+.title-number span {
+  opacity: 60%;
+}
+
+.partner-block {
+  overflow: hidden;
+  width: 100%;
+}
+
+.partner-block-card-img-back {
+  background-image: url('../img/backTwo.png');
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.partner-block-card-img-back img {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.partner-block-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 100px;
+}
+
+.carousel-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.partner-block-card p {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: #313131;
+  margin: 0;
+  margin-top: 35px;
+}
+
+.partner-block-card span {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28.8px;
+  color: #313131;
+  margin-top: 5px;
+  opacity: 60%;
+}
+
+.partner-block-card-button {
+  background: none;
+  border-radius: 62px;
+  border: 1px solid #3057A2;
+
+  font-family: "Golos Text", sans-serif;
+  color: #3057A2;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 5px 10px;
+
+  margin-top: 25px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.partner-block-card-button:hover {
+  background-color: #3057A2;
+  color: #FFFFFF;
+  transition: 0.2s;
+}
+
+.line-two {
+  margin-top: 200px;
+}
+
+/* подвал */
+
+footer {
+  background-color: #E9DED4;
+}
+
+footer p {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0;
+
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.2px;
+  opacity: 60%;
+}
+
+
+
+.card-info-block-dop {
+  display: flex;
+}
+
+.card-block-img-mobile {
+  display: none;
+}
+
+.card-block-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1320px) {
+  .container {
+    width: 1120px;
+    margin: auto;
+  }
+  .support {
+    margin-top: 50px;
+  }
+  .card {
+    margin-top: 50px;
+  }
+  .card-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card-info {
+    width: 100%;
+  }
+  .partner {
+    margin-top: 50px;
+  }
+  .line-two {
+    margin-top: 100px;
+  }
+  .partner-block-card {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 824px;
+    margin: auto;
+  }
+  .support {
+    margin-top: 50px;
+  }
+  .card {
+    margin-top: 50px;
+  }
+  .card-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card-info {
+    width: 100%;
+  }
+  .partner {
+    margin-top: 50px;
+  }
+  .line-two {
+    margin-top: 100px;
+  }
+  .partner-block-card {
+    margin-right: 140px;
+  }
+  .support-block-text {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .support-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-title-dop p {
+    width: 100%;
+  }
+  .card-title-dop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .card-block-img {
+    display: none;
+  }
+  .home-button-two {
+    width: 263px;
+    border-radius: 66px;
+    padding: 15px 20px 15px 20px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+    font-family: "Golos Text", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20.8px;
+    text-align: center;
+    transition: 0.2s;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 568px;
+    margin: auto;
+  }
+  .support {
+    margin-top: 50px;
+  }
+  .card {
+    margin-top: 50px;
+  }
+  .card-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card-info {
+    width: 100%;
+  }
+  .partner {
+    margin-top: 50px;
+  }
+  .line-two {
+    margin-top: 100px;
+  }
+  .partner-block-card {
+    margin-right: 20px;
+  }
+  .support-block-text {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .support-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-title-dop p {
+    width: 100%;
+  }
+  .card-title-dop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    width: 358px;
+    margin: auto;
+  }
+  .support {
+    margin-top: 50px;
+  }
+  .card {
+    margin-top: 50px;
+  }
+  .card-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    flex-wrap: wrap;
+  }
+  .card-title {
+    overflow: hidden;
+  }
+  .card-info {
+    width: 100%;
+  }
+  .partner {
+    margin-top: 50px;
+  }
+  .line-two {
+    margin-top: 100px;
+  }
+  .partner-block-card {
+    margin-right: 200px;
+  }
+  .support-block-text {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .support-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-title-dop p {
+    width: 100%;
+  }
+  .card-title-dop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .home-button {
+    display: flex;
+    margin-top: 45px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-text-one{
+    font-size: 36px;
+    line-height: 39.6px;
+  }
+  .home-text-two {
+    font-size: 36px;
+    line-height: 39.6px;
+  }
+  .home {
+    width: 100%;
+  }
+  .home-text-three {
+    font-family: "Golos Text", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23.4px;
+    text-align: left;
+  }
+  .home-button-one {
+    width: 100%;
+    display: block;
+  }
+  .home-button-two {
+    width: 100%;
+    display: block;
+    margin-top: 15px;
+    opacity: 80%;
+  }
+  .support-block h2 {
+    font-weight: 400;
+    font-size: 28px;
+    text-transform: uppercase;
+    line-height: 37.8px;
+  }
+  .support-block h2 span {
+    font-weight: 700;
+    font-size: 28px;
+    text-transform: uppercase;
+    line-height: 37.8px;
+    color: #F54932;
+  }
+  .support-block-table tr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .support-block-table td:first-child {
+    border: none;
+  }
+  .support-block-table td:last-child {
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    padding: 0px 0px 15px 0px;
+  }
+  .support-block-table tr:first-child td:last-child {
+    padding: 0px 0px 15px 0px;
+  }
+  .support-block-table tr:last-child td:last-child {
+    border-bottom: 0;
+    padding: 15px 0px 0px 0px;
+  }
+  .card-title h2 {
+    font-size: 36px;
+    line-height: 39px;
+  }
+  .partner h2 {
+    font-size: 36px;
+    line-height: 39px;
+  }
+
+  .support-img {
+    width: 375px;
+    height: 374px;
+  }
+
+  .title-number {
+    display: none;
+  }
+
+  .title-number-mobile {
+    margin-top: 50px;
+    display: flex;
+  }
+  .card-block {
+    gap: 0;
+  }
+  .card-block-img-mobile {
+    display: flex;
+  }
+
+  .card-info:first-child .card-info-block{
+    display: flex;
+    padding: 18px;
+    color: #313131;
+    font-family: "Golos Text", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    flex-direction: column;
+  }
+  .card-info-block-dop {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  .car-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-block {
+    display: none;
+  }
+  .card-block-mobile {
+    display: block;
+    height: 400px;
+  }
+  .card-info-block {
+    display: flex;
+    padding: 18px;
+    color: #313131;
+    font-family: "Golos Text", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    height: 275px;
+  }
+  .card-info-block-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .main-block {
+    background-image: url(../img/imageMob.png);
+    height: 850px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .support-block-table {
+    margin-left: 0;
+  }
+}
+
+.indicators {
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.indicator {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #8c9194;
+  border-radius: 50%;
+}
+
+.indicator-active {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #595653;
+  border-radius: 50%;
+}
