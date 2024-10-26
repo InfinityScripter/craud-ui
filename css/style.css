@@ -177,7 +177,7 @@ svg + svg {
   justify-content: center;
   background-color: #1F1F1F;
 
-  font-family: "Golos Text", sans-serif;
+  font-family: var(--font-family), sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 20.8px;
@@ -213,7 +213,7 @@ svg + svg {
   justify-content: center;
   background: none;
 
-  font-family: "Golos Text", sans-serif;
+  font-family: var(--font-family), sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 20.8px;
@@ -309,9 +309,9 @@ svg + svg {
 
 .support-block-table td {
   border: 2px solid #D0D0D0;
-  padding: 15px 0px 15px 0px;
+  padding: 15px 0 15px 0;
   font-weight: 600;
-  font-family: "Golos Text", sans-serif;
+  font-family: var(--font-family), sans-serif;
   font-size: 20px;
 }
 
@@ -328,30 +328,30 @@ svg + svg {
   border-right-width: 0;
   border-left-width: 0;
 
-  padding: 0px 0px 0px 15px;
+  padding: 0 0 0 15px;
 }
 
 .support-block-table tr:first-child td {
-  padding: 0px 0px 15px 0px;
+  padding: 0 0 15px 0;
 }
 
 .support-block-table tr:first-child td:last-child {
-  padding: 0px 0px 15px 15px;
+  padding: 0 0 15px 15px;
 }
 
 .support-block-table tr:last-child td {
   border-bottom: 0;
-  padding: 15px 0px 0px 0px;
+  padding: 15px 0 0 0;
 }
 
 .support-block-table tr:last-child td:last-child {
   border-bottom: 0;
-  padding: 15px 0px 0px 15px;
+  padding: 15px 0 0 15px;
 }
 
 .support-table-info-text {
   color: #3057A2;
-  font-family: "Golos Text", sans-serif;
+  font-family: var(--font-family), sans-serif;
   font-weight: 400;
   font-size: 20px;
   margin-top: 50px;
@@ -390,7 +390,7 @@ svg + svg {
   width: 25%;
   margin: 0;
 
-  font-family: "Golos Text", sans-serif;
+  font-family: var(--font-family), sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -426,7 +426,7 @@ svg + svg {
   padding: 18px;
 
   color: #313131;
-  font-family: "Golos Text", sans-serif;
+  font-family: var(--font-family), sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -436,7 +436,7 @@ svg + svg {
   background-color: white;
 
   color: #313131;
-  font-family: "Golos Text", sans-serif;
+  font-family: var(--font-family), sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
@@ -495,7 +495,6 @@ svg + svg {
 }
 
 .title-number-button {
-  border-radius: 100%;
   padding: 12px;
   display: flex;
 
@@ -535,7 +534,7 @@ svg + svg {
 }
 
 .title-number p {
-  font-family: "Golos Text", sans-serif;
+  font-family: var(--font-family), sans-serif;
   font-weight: 400;
   font-size: 16px;
   margin-right: 15px;
@@ -560,8 +559,7 @@ svg + svg {
 }
 
 .partner-block-card-img-back img {
-  padding: 20px;
-  padding-bottom: 0;
+  padding: 20px 20px 0;
 }
 
 .partner-block-card {
@@ -581,17 +579,16 @@ svg + svg {
 
 
 .partner-block-card p {
-  font-family: "Golos Text", sans-serif;
+  font-family: var(--font-family), sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 28.8px;
   color: #313131;
-  margin: 0;
-  margin-top: 35px;
+  margin: 35px 0 0;
 }
 
 .partner-block-card span {
-  font-family: "Golos Text", sans-serif;
+  font-family: var(--font-family), sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 28.8px;
@@ -605,7 +602,7 @@ svg + svg {
   border-radius: 62px;
   border: 1px solid #3057A2;
 
-  font-family: "Golos Text", sans-serif;
+  font-family: var(--font-family), sans-serif;
   color: #3057A2;
   font-weight: 500;
   font-size: 16px;
@@ -638,7 +635,7 @@ footer p {
   padding-bottom: 50px;
   margin: 0;
 
-  font-family: "Golos Text", sans-serif;
+  font-family: var(--font-family), sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19.2px;
@@ -768,7 +765,7 @@ footer p {
     display: flex;
     justify-content: center;
     background: #FFFFFF;
-    font-family: "Golos Text", sans-serif;
+    font-family: var(--font-family), sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 20.8px;
@@ -935,7 +932,7 @@ footer p {
   }
 
   .home-text-three {
-    font-family: "Golos Text", sans-serif;
+    font-family: var(--font-family), sans-serif;
     font-weight: 400;
     font-size: 18px;
     text-align: left;
@@ -949,10 +946,10 @@ footer p {
     display: block;
 
       border-radius: 66px;
-      padding: 18px 20px;
+      padding: 12px;
       width: 335px;
       height: 47px;
-    font-family: var(--font-family);
+    font-family: var(--font-family), sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 130%;
@@ -962,11 +959,12 @@ footer p {
 
 
 .home-button-two {
-  width: 100%;
+  width: 335px;
+  height: 47px;
   display: block;
-  margin-top: 15px;
   opacity: 80%;
-  font-family: var(--font-family);
+  padding: 12px;
+  font-family: var(--font-family), sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 130%;
@@ -1002,16 +1000,16 @@ footer p {
   border-top-width: 0;
   border-right-width: 0;
   border-left-width: 0;
-  padding: 0px 0px 15px 0px;
+  padding: 0 0 15px 0;
 }
 
 .support-block-table tr:first-child td:last-child {
-  padding: 0px 0px 15px 0px;
+  padding: 0 0 15px 0;
 }
 
 .support-block-table tr:last-child td:last-child {
   border-bottom: 0;
-  padding: 15px 0px 0px 0px;
+  padding: 15px 0 0 0;
 }
 
 .card-title h2 {
@@ -1050,7 +1048,7 @@ footer p {
   display: flex;
   padding: 18px;
   color: #313131;
-  font-family: "Golos Text", sans-serif;
+  font-family: var(--font-family), sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -1081,7 +1079,7 @@ footer p {
   display: flex;
   padding: 18px;
   color: #313131;
-  font-family: "Golos Text", sans-serif;
+  font-family: var(--font-family), sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
