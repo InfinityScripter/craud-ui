@@ -5,14 +5,15 @@
 :root {
   --font-family: "Golos Text", sans-serif;
   --second-family: "Merriweather", sans-serif;
-  --third-family: "Montserrat", sans-serif;
+  --black-color: #595653;
 }
+
 
 
 body {
   padding: 0;
   margin: 0;
-  font-family: "Merriweather", serif;
+  font-family: var(--second-family), sans-serif;
 }
 
 .container {
@@ -52,8 +53,41 @@ body {
   font-size: 14px;
   line-height: 108%;
   text-transform: uppercase;
-  color: #595653;
+  color: var(--black-color);
+
+  /*@media screen and (min-width: 375px) {*/
+  /*}*/
 }
+
+svg {
+  width: 23px;
+  height: 32px;
+}
+
+/* Adjust SVG size for screens smaller than 375px */
+@media (max-width: 375px) {
+  svg {
+    width: 18.75px;
+    height: 27px;
+  }
+}
+
+svg + svg {
+  margin-left: 2px;
+}
+
+@media (max-width: 375px) {
+  svg + svg {
+    margin: 0;
+  }
+}
+
+.only-mobile{
+  @media screen and (min-width: 375px) {
+    display: none;
+  }
+}
+
 
 .main-block {
   background-image: url('../img/image.png');
@@ -65,23 +99,31 @@ body {
 
 .home {
   width: 542px;
-  height: 444px;
 }
 
 .home-text-one {
-  margin: 50px 0 7px 0;
+  margin: 42px 0 7px 0;
   font-family: var(--second-family), serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 110%;
   text-transform: uppercase;
   color: #313131;
-  letter-spacing: 2px;
+  white-space: nowrap;
+  @media screen and (min-width: 425px) {
+    margin: 60px 0 7px 0;
+    font-family: var(--second-family), serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 110%;
+
+    text-transform: uppercase;
+
+  }
 }
 
 .home-text-two {
   margin: 0;
-  text-align: center;
   font-family: var(--second-family), serif;
   font-weight: 400;
   font-size: 36px;
@@ -89,6 +131,15 @@ body {
   text-transform: uppercase;
   color: #313131;
   letter-spacing: 2px;
+  @media screen and (min-width: 425px) {
+    font-family: var(--second-family), serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 110%;
+    text-transform: uppercase;
+    /*color: #313131;*/
+    /*white-space: nowrap;*/
+  }
 }
 
 .home-text-three {
@@ -98,17 +149,27 @@ body {
   line-height: 130%;
   text-align: center;
   color: #313131;
+  padding-bottom: 12px;
+  /*@media (max-width: 375px) {*/
+
+
+  /*}*/
 }
 
 .home-button {
   display: flex;
-  justify-content: space-between;
-  margin-top: 45px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 16px;
+  padding-top: 12px;
+
 }
 
 .home-button-one {
   width: 263px;
   border-radius: 66px;
+  height: 72px;
   padding: 15px 20px 15px 20px;
   border: none;
   cursor: pointer;
@@ -123,6 +184,12 @@ body {
   text-align: center;
   color: #FFFFFF;
   transition: 0.2s;
+  @media (max-width: 375px) {
+    border-radius: 66px;
+    padding: 18px 20px;
+    width: 335px;
+    height: 47px;
+  }
 }
 
 .home-button-one span {
@@ -138,6 +205,7 @@ body {
 .home-button-two {
   width: 263px;
   border-radius: 66px;
+  height: 72px;
   padding: 15px 20px 15px 20px;
   border: 2px solid #1F1F1F;
   cursor: pointer;
@@ -151,6 +219,12 @@ body {
   line-height: 20.8px;
   text-align: center;
   transition: 0.2s;
+  @media (max-width: 375px) {
+    border-radius: 66px;
+    padding: 18px 20px;
+    width: 335px;
+    height: 47px;
+  }
 }
 
 .home-button-two span {
@@ -174,7 +248,7 @@ body {
 .line-list {
 
   margin: 0;
-  padding: 18px 12px 18px 12px;
+  padding: 14px 10px 14px 10px;
   display: flex;
   font-weight: 400;
   font-size: 22px;
@@ -189,15 +263,16 @@ body {
 }
 
 
-
 /* Второй блок Support */
 
 .support {
-  margin-top: 100px;
+  margin-top: 77px;
 }
 
 .support-block {
   display: flex;
+  margin-bottom: 32px;
+
 }
 
 .support-block h2 {
@@ -220,15 +295,16 @@ body {
   margin-right: 5px;
 }
 
-.support-block-table{
-  margin-left: 25px;
+.support-block-table {
+  margin-left: 60px;
 }
 
 .support-block-table table {
-  margin: 0;
+  margin-top: 62px;
   padding: 0;
   width: 100%;
   border-spacing: 0;
+
 }
 
 .support-block-table td {
@@ -242,7 +318,7 @@ body {
 .support-block-table td:first-child {
   color: #8c9194;
   font-weight: 400;
-
+  width: 305px;
   border-top-width: 0;
   border-left-width: 0;
 }
@@ -268,7 +344,7 @@ body {
   padding: 15px 0px 0px 0px;
 }
 
-.support-block-table tr:last-child td:last-child  {
+.support-block-table tr:last-child td:last-child {
   border-bottom: 0;
   padding: 15px 0px 0px 15px;
 }
@@ -278,7 +354,7 @@ body {
   font-family: "Golos Text", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 /* Блок с карточками */
@@ -295,6 +371,11 @@ body {
   text-transform: uppercase;
 }
 
+.card-title-section {
+  padding-top: 56px;
+}
+
+
 .card-title-dop {
   display: flex;
   align-items: center;
@@ -302,7 +383,7 @@ body {
 
 .card-title-dop h2 {
   display: inline;
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
 .card-title-dop p {
@@ -323,7 +404,7 @@ body {
   grid-template-columns: repeat(3, 393px);
   grid-template-rows: 112px 112px 130px;
 
-  margin-top: 65px;
+  margin-top: 55px;
 }
 
 .card-info {
@@ -387,7 +468,7 @@ body {
 /* Участники */
 
 .partner {
-  margin-top: 100px;
+  margin-top: 160px;
 }
 
 .title {
@@ -543,7 +624,7 @@ body {
 }
 
 .line-two {
-  margin-top: 200px;
+  margin-top: 142px;
 }
 
 /* подвал */
@@ -553,7 +634,7 @@ footer {
 }
 
 footer p {
-  padding-top: 50px;
+  padding-top: 43px;
   padding-bottom: 50px;
   margin: 0;
 
@@ -563,7 +644,6 @@ footer p {
   line-height: 19.2px;
   opacity: 60%;
 }
-
 
 
 .card-info-block-dop {
@@ -583,26 +663,33 @@ footer p {
     width: 1120px;
     margin: auto;
   }
+
   .support {
     margin-top: 50px;
   }
+
   .card {
     margin-top: 50px;
   }
+
   .card-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
   .card-info {
     width: 100%;
   }
+
   .partner {
     margin-top: 50px;
   }
+
   .line-two {
     margin-top: 100px;
   }
+
   .partner-block-card {
     margin-right: 40px;
   }
@@ -613,51 +700,65 @@ footer p {
     width: 824px;
     margin: auto;
   }
+
   .support {
     margin-top: 50px;
   }
+
   .card {
     margin-top: 50px;
   }
+
   .card-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
   .card-info {
     width: 100%;
   }
+
   .partner {
     margin-top: 50px;
   }
+
   .line-two {
     margin-top: 100px;
   }
+
   .partner-block-card {
     margin-right: 140px;
   }
+
   .support-block-text {
     display: none;
   }
+
   .mobile {
     display: block;
   }
+
   .support-block {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .card-title-dop p {
     width: 100%;
   }
+
   .card-title-dop {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
+
   .card-block-img {
     display: none;
   }
+
   .home-button-two {
     width: 263px;
     border-radius: 66px;
@@ -681,43 +782,55 @@ footer p {
     width: 568px;
     margin: auto;
   }
+
   .support {
     margin-top: 50px;
   }
+
   .card {
     margin-top: 50px;
   }
+
   .card-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
   .card-info {
     width: 100%;
   }
+
   .partner {
     margin-top: 50px;
   }
+
   .line-two {
     margin-top: 100px;
   }
+
   .partner-block-card {
     margin-right: 20px;
   }
+
   .support-block-text {
     display: none;
   }
+
   .mobile {
     display: block;
   }
+
   .support-block {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .card-title-dop p {
     width: 100%;
   }
+
   .card-title-dop {
     display: flex;
     flex-direction: column;
@@ -730,12 +843,19 @@ footer p {
     width: 358px;
     margin: auto;
   }
+
   .support {
     margin-top: 50px;
   }
+
+  .header-name{
+    margin: 0;
+  }
+
   .card {
     margin-top: 50px;
   }
+
   .card-block {
     display: flex;
     flex-direction: column;
@@ -743,190 +863,250 @@ footer p {
     height: 400px;
     flex-wrap: wrap;
   }
+
+
   .card-title {
     overflow: hidden;
+
   }
+
   .card-info {
     width: 100%;
   }
+
   .partner {
     margin-top: 50px;
   }
+
   .line-two {
     margin-top: 100px;
   }
+
   .partner-block-card {
     margin-right: 200px;
   }
+
   .support-block-text {
     display: none;
   }
+
   .mobile {
     display: block;
   }
+
   .support-block {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .card-title-dop p {
     width: 100%;
   }
+
   .card-title-dop {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
+
   .home-button {
     display: flex;
-    margin-top: 45px;
+    margin-top: 16px;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
   }
-  .home-text-one{
+
+  .home-text-one {
     font-size: 36px;
     line-height: 39.6px;
   }
+
   .home-text-two {
     font-size: 36px;
     line-height: 39.6px;
   }
+
   .home {
     width: 100%;
   }
+
   .home-text-three {
     font-family: "Golos Text", sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 23.4px;
     text-align: left;
+    margin: 15px 0 0 0;
+    padding: 0;
+    line-height: 120%;
+
   }
+
   .home-button-one {
-    width: 100%;
     display: block;
-  }
-  .home-button-two {
-    width: 100%;
-    display: block;
-    margin-top: 15px;
-    opacity: 80%;
-  }
-  .support-block h2 {
-    font-weight: 400;
-    font-size: 28px;
-    text-transform: uppercase;
-    line-height: 37.8px;
-  }
-  .support-block h2 span {
-    font-weight: 700;
-    font-size: 28px;
-    text-transform: uppercase;
-    line-height: 37.8px;
-    color: #F54932;
-  }
-  .support-block-table tr {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .support-block-table td:first-child {
-    border: none;
-  }
-  .support-block-table td:last-child {
-    border-top-width: 0;
-    border-right-width: 0;
-    border-left-width: 0;
-    padding: 0px 0px 15px 0px;
-  }
-  .support-block-table tr:first-child td:last-child {
-    padding: 0px 0px 15px 0px;
-  }
-  .support-block-table tr:last-child td:last-child {
-    border-bottom: 0;
-    padding: 15px 0px 0px 0px;
-  }
-  .card-title h2 {
-    font-size: 36px;
-    line-height: 39px;
-  }
-  .partner h2 {
-    font-size: 36px;
-    line-height: 39px;
-  }
 
-  .support-img {
-    width: 375px;
-    height: 374px;
-  }
-
-  .title-number {
-    display: none;
-  }
-
-  .title-number-mobile {
-    margin-top: 50px;
-    display: flex;
-  }
-  .card-block {
-    gap: 0;
-  }
-  .card-block-img-mobile {
-    display: flex;
-  }
-
-  .card-info:first-child .card-info-block{
-    display: flex;
-    padding: 18px;
-    color: #313131;
-    font-family: "Golos Text", sans-serif;
+      border-radius: 66px;
+      padding: 18px 20px;
+      width: 335px;
+      height: 47px;
+    font-family: var(--font-family);
     font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    flex-direction: column;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    color: #fff;
   }
-  .card-info-block-dop {
-    display: flex;
-    margin-bottom: 15px;
-  }
-  .car-mobile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .card-block {
-    display: none;
-  }
-  .card-block-mobile {
-    display: block;
-    height: 400px;
-  }
-  .card-info-block {
-    display: flex;
-    padding: 18px;
-    color: #313131;
-    font-family: "Golos Text", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    height: 275px;
-  }
-  .card-info-block-mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-  .main-block {
-    background-image: url(../img/imageMob.png);
-    height: 850px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  .support-block-table {
-    margin-left: 0;
-  }
+
+
+.home-button-two {
+  width: 100%;
+  display: block;
+  margin-top: 15px;
+  opacity: 80%;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
 }
+
+.support-block h2 {
+  font-weight: 400;
+  font-size: 28px;
+  text-transform: uppercase;
+  line-height: 37.8px;
+}
+
+.support-block h2 span {
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: uppercase;
+  line-height: 37.8px;
+  color: #F54932;
+}
+
+.support-block-table tr {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.support-block-table td:first-child {
+  border: none;
+}
+
+.support-block-table td:last-child {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  padding: 0px 0px 15px 0px;
+}
+
+.support-block-table tr:first-child td:last-child {
+  padding: 0px 0px 15px 0px;
+}
+
+.support-block-table tr:last-child td:last-child {
+  border-bottom: 0;
+  padding: 15px 0px 0px 0px;
+}
+
+.card-title h2 {
+  font-size: 36px;
+  line-height: 39px;
+}
+
+.partner h2 {
+  font-size: 36px;
+  line-height: 39px;
+}
+
+.support-img {
+  width: 375px;
+  height: 374px;
+}
+
+.title-number {
+  display: none;
+}
+
+.title-number-mobile {
+  margin-top: 50px;
+  display: flex;
+}
+
+.card-block {
+  gap: 0;
+}
+
+.card-block-img-mobile {
+  display: flex;
+}
+
+.card-info:first-child .card-info-block {
+  display: flex;
+  padding: 18px;
+  color: #313131;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  flex-direction: column;
+}
+
+.card-info-block-dop {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.car-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-block {
+  display: none;
+}
+
+.card-block-mobile {
+  display: block;
+  height: 400px;
+}
+
+.card-info-block {
+  display: flex;
+  padding: 18px;
+  color: #313131;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  height: 275px;
+}
+
+.card-info-block-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.main-block {
+  background-image: url(../img/imageMob.png);
+  height: 850px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.support-block-table {
+  margin-left: 0;
+}
+}
+
 
 .indicators {
   gap: 10px;
@@ -948,6 +1128,6 @@ footer p {
   display: block;
   width: 10px;
   height: 10px;
-  background-color: #595653;
+  color: var(--black-color);
   border-radius: 50%;
 }
