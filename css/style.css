@@ -835,7 +835,7 @@ footer p {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   .container {
     width: 358px;
     margin: auto;
